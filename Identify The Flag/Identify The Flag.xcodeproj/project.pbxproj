@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF0166611C62EBE10094CFDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0166601C62EBE10094CFDC /* AppDelegate.swift */; };
+		EF0166631C62EBE10094CFDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0166621C62EBE10094CFDC /* ViewController.swift */; };
+		EF0166661C62EBE10094CFDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0166641C62EBE10094CFDC /* Main.storyboard */; };
+		EF0166681C62EBE10094CFDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0166671C62EBE10094CFDC /* Assets.xcassets */; };
+		EF01666B1C62EBE10094CFDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0166691C62EBE10094CFDC /* LaunchScreen.storyboard */; };
+		EF0166761C62EBE20094CFDC /* Identify_The_FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0166751C62EBE20094CFDC /* Identify_The_FlagTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF0166721C62EBE20094CFDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0166551C62EBE10094CFDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF01665C1C62EBE10094CFDC;
+			remoteInfo = "Identify The Flag";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF01665D1C62EBE10094CFDC /* Identify The Flag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Identify The Flag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0166601C62EBE10094CFDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF0166621C62EBE10094CFDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF0166651C62EBE10094CFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF0166671C62EBE10094CFDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF01666A1C62EBE10094CFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF01666C1C62EBE10094CFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0166711C62EBE20094CFDC /* Identify The FlagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Identify The FlagTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0166751C62EBE20094CFDC /* Identify_The_FlagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identify_The_FlagTests.swift; sourceTree = "<group>"; };
+		EF0166771C62EBE20094CFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF01665A1C62EBE10094CFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF01666E1C62EBE20094CFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF0166541C62EBE10094CFDC = {
+			isa = PBXGroup;
+			children = (
+				EF01665F1C62EBE10094CFDC /* Identify The Flag */,
+				EF0166741C62EBE20094CFDC /* Identify The FlagTests */,
+				EF01665E1C62EBE10094CFDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF01665E1C62EBE10094CFDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF01665D1C62EBE10094CFDC /* Identify The Flag.app */,
+				EF0166711C62EBE20094CFDC /* Identify The FlagTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF01665F1C62EBE10094CFDC /* Identify The Flag */ = {
+			isa = PBXGroup;
+			children = (
+				EF0166601C62EBE10094CFDC /* AppDelegate.swift */,
+				EF0166621C62EBE10094CFDC /* ViewController.swift */,
+				EF0166641C62EBE10094CFDC /* Main.storyboard */,
+				EF0166671C62EBE10094CFDC /* Assets.xcassets */,
+				EF0166691C62EBE10094CFDC /* LaunchScreen.storyboard */,
+				EF01666C1C62EBE10094CFDC /* Info.plist */,
+			);
+			path = "Identify The Flag";
+			sourceTree = "<group>";
+		};
+		EF0166741C62EBE20094CFDC /* Identify The FlagTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0166751C62EBE20094CFDC /* Identify_The_FlagTests.swift */,
+				EF0166771C62EBE20094CFDC /* Info.plist */,
+			);
+			path = "Identify The FlagTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF01665C1C62EBE10094CFDC /* Identify The Flag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF01667A1C62EBE20094CFDC /* Build configuration list for PBXNativeTarget "Identify The Flag" */;
+			buildPhases = (
+				EF0166591C62EBE10094CFDC /* Sources */,
+				EF01665A1C62EBE10094CFDC /* Frameworks */,
+				EF01665B1C62EBE10094CFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Identify The Flag";
+			productName = "Identify The Flag";
+			productReference = EF01665D1C62EBE10094CFDC /* Identify The Flag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF0166701C62EBE20094CFDC /* Identify The FlagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF01667D1C62EBE20094CFDC /* Build configuration list for PBXNativeTarget "Identify The FlagTests" */;
+			buildPhases = (
+				EF01666D1C62EBE20094CFDC /* Sources */,
+				EF01666E1C62EBE20094CFDC /* Frameworks */,
+				EF01666F1C62EBE20094CFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF0166731C62EBE20094CFDC /* PBXTargetDependency */,
+			);
+			name = "Identify The FlagTests";
+			productName = "Identify The FlagTests";
+			productReference = EF0166711C62EBE20094CFDC /* Identify The FlagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF0166551C62EBE10094CFDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ankit Kumar";
+				TargetAttributes = {
+					EF01665C1C62EBE10094CFDC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J94UKTLVH6;
+					};
+					EF0166701C62EBE20094CFDC = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = J94UKTLVH6;
+						TestTargetID = EF01665C1C62EBE10094CFDC;
+					};
+				};
+			};
+			buildConfigurationList = EF0166581C62EBE10094CFDC /* Build configuration list for PBXProject "Identify The Flag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF0166541C62EBE10094CFDC;
+			productRefGroup = EF01665E1C62EBE10094CFDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF01665C1C62EBE10094CFDC /* Identify The Flag */,
+				EF0166701C62EBE20094CFDC /* Identify The FlagTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF01665B1C62EBE10094CFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF01666B1C62EBE10094CFDC /* LaunchScreen.storyboard in Resources */,
+				EF0166681C62EBE10094CFDC /* Assets.xcassets in Resources */,
+				EF0166661C62EBE10094CFDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF01666F1C62EBE20094CFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF0166591C62EBE10094CFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0166631C62EBE10094CFDC /* ViewController.swift in Sources */,
+				EF0166611C62EBE10094CFDC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF01666D1C62EBE20094CFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0166761C62EBE20094CFDC /* Identify_The_FlagTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF0166731C62EBE20094CFDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF01665C1C62EBE10094CFDC /* Identify The Flag */;
+			targetProxy = EF0166721C62EBE20094CFDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF0166641C62EBE10094CFDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0166651C62EBE10094CFDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF0166691C62EBE10094CFDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF01666A1C62EBE10094CFDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF0166781C62EBE20094CFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF0166791C62EBE20094CFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF01667B1C62EBE20094CFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Identify The Flag/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ankitrkumar.Identify-The-Flag";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF01667C1C62EBE20094CFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Identify The Flag/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ankitrkumar.Identify-The-Flag";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF01667E1C62EBE20094CFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Identify The FlagTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ankitrkumar.Identify-The-FlagTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Identify The Flag.app/Identify The Flag";
+			};
+			name = Debug;
+		};
+		EF01667F1C62EBE20094CFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Identify The FlagTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ankitrkumar.Identify-The-FlagTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Identify The Flag.app/Identify The Flag";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF0166581C62EBE10094CFDC /* Build configuration list for PBXProject "Identify The Flag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF0166781C62EBE20094CFDC /* Debug */,
+				EF0166791C62EBE20094CFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF01667A1C62EBE20094CFDC /* Build configuration list for PBXNativeTarget "Identify The Flag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF01667B1C62EBE20094CFDC /* Debug */,
+				EF01667C1C62EBE20094CFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF01667D1C62EBE20094CFDC /* Build configuration list for PBXNativeTarget "Identify The FlagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF01667E1C62EBE20094CFDC /* Debug */,
+				EF01667F1C62EBE20094CFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF0166551C62EBE10094CFDC /* Project object */;
+}
