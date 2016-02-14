@@ -45,14 +45,14 @@ class MyView: UIView {
         let h = CGRectGetHeight( bounds ) // h = height of view (in points)
         self.dw = w/10.0                      // dw = width of cell (in points)
         self.dh = h/10.0                      // dh = height of cell (in points)
+        var hobbitStart : Int
         
         if !blockersCreated{
             var okToAddBlocker = true
-            var i = 0
             let numOfBlockers = Int(arc4random_uniform(5)+15)
             row = Int(arc4random_uniform(10))
-            
-            while i < numOfBlockers//random number of blockers 15-20 on a 10x10 board
+            hobbitStart = row
+            while blockers.count <= numOfBlockers//random number of blockers 15-20 on a 10x10 board
             {
                 let randomx = CGFloat(arc4random_uniform(UInt32(w)))
                 let randomy = CGFloat(arc4random_uniform(UInt32(h)))
@@ -62,16 +62,19 @@ class MyView: UIView {
                 for j in blockers{
                     if(j != newSauron && (j.x + 1 != newSauron.x || j.y + 1 != newSauron.y))// calculated random to always ensure a clear path
                     {
-                        if(newSauron.x != CGFloat(row)*self.dw || newSauron.y != CGFloat(col)*self.dh)
+                        if(newSauron.x != CGFloat(hobbitStart) || newSauron.y != CGFloat(col)*self.dh)
                         {
                             okToAddBlocker = true
+                        }
+                        else
+                        {
+                            okToAddBlocker = false
                         }
                     }
                 }
                 if okToAddBlocker{
                     blockers.append(newSauron)
                     okToAddBlocker = false
-                    i+=1
                 }
             }
             
@@ -162,12 +165,6 @@ class MyView: UIView {
                         win = false
                         self.backgroundColor = UIColor.redColor()
                     }
-                    else if touchCol == 0
-                    {
-                        onEvil = false
-                        win = false
-                        self.backgroundColor = UIColor.cyanColor()
-                    }
                     else if (touchCol == 9 && !onEvil)
                     {
                         win = true
@@ -182,7 +179,7 @@ class MyView: UIView {
                         }
                         else
                         {
-                             self.backgroundColor = UIColor.redColor()
+                            self.backgroundColor = UIColor.redColor()
                         }
                     }
                 }
