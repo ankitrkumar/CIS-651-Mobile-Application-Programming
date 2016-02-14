@@ -50,6 +50,8 @@ class MyView: UIView {
             var okToAddBlocker = true
             var i = 0
             let numOfBlockers = Int(arc4random_uniform(5)+15)
+            row = Int(arc4random_uniform(10))
+            
             while i < numOfBlockers//random number of blockers 15-20 on a 10x10 board
             {
                 let randomx = CGFloat(arc4random_uniform(UInt32(w)))
@@ -60,7 +62,7 @@ class MyView: UIView {
                 for j in blockers{
                     if(j != newSauron && (j.x + 1 != newSauron.x || j.y + 1 != newSauron.y))// calculated random to always ensure a clear path
                     {
-                        if(newSauron.x != 0 || newSauron.y != 0)
+                        if(newSauron.x != CGFloat(row)*self.dw || newSauron.y != CGFloat(col)*self.dh)
                         {
                             okToAddBlocker = true
                         }
@@ -75,7 +77,9 @@ class MyView: UIView {
             
             blockersCreated = !blockersCreated
         }
+        
         var img = UIImage(named:"sauron.png")
+        
         for po in blockers{
             let tl = CGPointMake( CGFloat(po.x)*self.dw, CGFloat(po.y)*self.dh )
             let imageRect = CGRectMake(tl.x, tl.y, self.dw, self.dh)
@@ -84,6 +88,7 @@ class MyView: UIView {
         
         // draw lines to form a 10x10 cell grid
         CGContextBeginPath( context )               // begin collecting drawing operations
+        
         for i in 1..<10 {
             // draw horizontal grid line
             let iF = CGFloat(i)
@@ -96,6 +101,7 @@ class MyView: UIView {
             CGContextMoveToPoint( context, iFlt*self.dw, 0 )
             CGContextAddLineToPoint( context, iFlt*self.dw, h )
         }
+        
         UIColor.grayColor().setStroke()                        // use gray as stroke color
         CGContextDrawPath( context, CGPathDrawingMode.Stroke ) // execute collected drawing ops
         
