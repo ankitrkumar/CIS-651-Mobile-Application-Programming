@@ -207,9 +207,7 @@ class MyView: UIView {
         UIView.animateWithDuration(5.0,
             delay: 0.0,
             options: [.CurveLinear, .AllowUserInteraction],
-            animations: {
-                () in
-                print (self.hobbitRect.origin, blocker.layer.presentationLayer()!.frame.origin)
+            animations: {() in
                 blocker.frame = CGRectMake(blocker.frame.origin.x, blocker.frame.origin.y - viewHeight, blocker.frame.size.width, blocker.frame.size.height);
                 if self.checkTouch(self.hobbitRect.origin, blocker: blocker)
                 {
@@ -237,8 +235,6 @@ class MyView: UIView {
             delay: 0.0,
             options: [.CurveLinear, .AllowUserInteraction],
             animations: {() in
-                print (self.hobbitRect.origin, blocker.frame)
-                
                 blocker.frame = CGRectMake(blocker.frame.origin.x, blocker.frame.origin.y - viewHeight, blocker.frame.size.width, blocker.frame.size.height)
                 
                 if self.checkTouch(self.hobbitRect.origin, blocker: blocker)
