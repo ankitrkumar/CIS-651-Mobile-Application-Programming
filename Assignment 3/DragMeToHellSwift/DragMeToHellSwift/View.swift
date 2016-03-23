@@ -26,6 +26,7 @@ class MyView: UIView {
     var blockersCreated = false
     var blockerImage: UIImage!
     var hobbitStart = 0
+    var hobbitRect =  CGRectMake(0, 0, 0, 0)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,7 +51,7 @@ class MyView: UIView {
             let numOfBlockers = Int(arc4random_uniform(5)+15)
             row = Int(arc4random_uniform(10))
             hobbitStart = row
-            let hobbitRect = CGRectMake(CGFloat(hobbitStart) * self.dw, CGFloat(col) * self.dh, dw, dh)
+            hobbitRect = CGRectMake(CGFloat(hobbitStart) * self.dw, CGFloat(col) * self.dh, dw, dh)
             while blockers.count <= numOfBlockers//random number of blockers 15-20 on a 10x10 board
             {
                 let randomx = CGFloat(arc4random_uniform(UInt32(w)))
@@ -113,6 +114,7 @@ class MyView: UIView {
             : CGPointMake( CGFloat(row)*self.dw, CGFloat(col)*self.dh )
         
         let imageRect = CGRectMake(tl.x, tl.y, self.dw, self.dh)
+        
         // place appropriate image where dragging stopped
         if ( win ) {
             img = UIImage(named:"ring.png")
@@ -157,6 +159,7 @@ class MyView: UIView {
             xy = t.locationInView(self)
             self.x = xy.x;  self.y = xy.y
             touchRow = Int(self.x / self.dw);  touchCol = Int(self.y / self.dh)
+            self.hobbitRect.origin = xy
         }
         if self.inMotion {
             //checking if the angel/hobbit comes into contact with any of the sauron/blocker things
@@ -205,9 +208,19 @@ class MyView: UIView {
             delay: 0.0,
             options: [.CurveLinear, .AllowUserInteraction],
             animations: {
-                () in blocker.frame = CGRectMake(blocker.center.x, blocker.center.y - viewHeight, blocker.frame.size.width, blocker.frame.size.height)
+                () in
+                print (self.hobbitRect.origin, blocker.layer.presentationLayer()!.frame.origin)
+                blocker.frame = CGRectMake(blocker.frame.origin.x, blocker.frame.origin.y - viewHeight, blocker.frame.size.width, blocker.frame.size.height);
+                if self.checkTouch(self.hobbitRect.origin, blocker: blocker)
+                {
+                    self.onEvil = true
+                    self.win = false
+                    self.backgroundColor = UIColor.redColor()
+                }
+                self.setNeedsDisplay();
+                
             },
-            completion: { (fin : Bool) in self.finishedAnimation( "", finished: fin, context: blocker ) })
+            completion: { (fin : Bool) in self.finishedAnimation(blocker) })
     }
     
     //simple method to chek if the current touch is inside of the frame of a blocker
@@ -222,16 +235,28 @@ class MyView: UIView {
         let viewHeight = self.bounds.size.height
         UIView.animateWithDuration(5.0,
             delay: 0.0,
-            options: [.Repeat, .CurveLinear, .AllowUserInteraction],
-            animations: {() in blocker.frame = CGRectMake(blocker.center.x, blocker.center.y - viewHeight, blocker.frame.size.width, blocker.frame.size.height)
+            options: [.CurveLinear, .AllowUserInteraction],
+            animations: {() in
+                print (self.hobbitRect.origin, blocker.frame)
+                
+                blocker.frame = CGRectMake(blocker.frame.origin.x, blocker.frame.origin.y - viewHeight, blocker.frame.size.width, blocker.frame.size.height)
+                
+                if self.checkTouch(self.hobbitRect.origin, blocker: blocker)
+                {
+                    self.onEvil = true
+                    self.win = false
+                    self.backgroundColor = UIColor.redColor()
+                }
+                self.setNeedsDisplay();
+                
             },
-            completion: nil)
+            completion: { (fin : Bool) in self.finishedAnimation(blocker) })
     }
     
     //beginAnimation finishes and calls this function
-    func finishedAnimation( animationId: String, finished: Bool, context: UIImageView )
+    func finishedAnimation(context: UIImageView )
     {
-        context.center.y = self.bounds.size.height
+        context.frame.origin.y = self.bounds.size.height
         performSelector(Selector("continueBlockerAnimation:"), withObject :context, afterDelay:0.0)
     }
     
@@ -246,6 +271,7 @@ class MyView: UIView {
                 xy = t.locationInView(self)
                 self.x = xy.x;  self.y = xy.y
                 touchRow = Int(self.x / self.dw);  touchCol = Int(self.y / self.dh)
+                
             }
             self.inMotion = false
             
