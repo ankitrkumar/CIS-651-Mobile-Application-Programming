@@ -236,16 +236,8 @@ class MyView: UIView {
             options: [.CurveLinear, .AllowUserInteraction],
             animations: {() in
                 blocker.frame = CGRectMake(blocker.frame.origin.x, blocker.frame.origin.y - viewHeight, blocker.frame.size.width, blocker.frame.size.height)
-                
-                if self.checkTouch(self.hobbitRect.origin, blocker: blocker)
-                {
-                    self.onEvil = true
-                    self.win = false
-                    self.backgroundColor = UIColor.redColor()
-                }
-                self.setNeedsDisplay();
-                
-            },
+                print(blocker.layer.presentationLayer()!.frame)
+                },
             completion: { (fin : Bool) in self.finishedAnimation(blocker) })
     }
     

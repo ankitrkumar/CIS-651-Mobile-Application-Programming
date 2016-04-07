@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF841D491CB6F8DF004A798B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF841D481CB6F8DF004A798B /* AppDelegate.swift */; };
+		EF841D4B1CB6F8DF004A798B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF841D4A1CB6F8DF004A798B /* UserViewController.swift */; };
+		EF841D4E1CB6F8DF004A798B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF841D4C1CB6F8DF004A798B /* Main.storyboard */; };
+		EF841D501CB6F8DF004A798B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF841D4F1CB6F8DF004A798B /* Assets.xcassets */; };
+		EF841D531CB6F8DF004A798B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF841D511CB6F8DF004A798B /* LaunchScreen.storyboard */; };
+		EF841D5E1CB6F8DF004A798B /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF841D5D1CB6F8DF004A798B /* RoshamboTests.swift */; };
+		EF841D691CB6F93C004A798B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF841D681CB6F93C004A798B /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF841D5A1CB6F8DF004A798B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF841D3D1CB6F8DF004A798B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF841D441CB6F8DF004A798B;
+			remoteInfo = Roshambo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF841D451CB6F8DF004A798B /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF841D481CB6F8DF004A798B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF841D4A1CB6F8DF004A798B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		EF841D4D1CB6F8DF004A798B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF841D4F1CB6F8DF004A798B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF841D521CB6F8DF004A798B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF841D541CB6F8DF004A798B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF841D591CB6F8DF004A798B /* RoshamboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF841D5D1CB6F8DF004A798B /* RoshamboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboTests.swift; sourceTree = "<group>"; };
+		EF841D5F1CB6F8DF004A798B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF841D681CB6F93C004A798B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF841D421CB6F8DF004A798B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF841D561CB6F8DF004A798B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF841D3C1CB6F8DF004A798B = {
+			isa = PBXGroup;
+			children = (
+				EF841D471CB6F8DF004A798B /* Roshambo */,
+				EF841D5C1CB6F8DF004A798B /* RoshamboTests */,
+				EF841D461CB6F8DF004A798B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF841D461CB6F8DF004A798B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF841D451CB6F8DF004A798B /* Roshambo.app */,
+				EF841D591CB6F8DF004A798B /* RoshamboTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF841D471CB6F8DF004A798B /* Roshambo */ = {
+			isa = PBXGroup;
+			children = (
+				EF841D481CB6F8DF004A798B /* AppDelegate.swift */,
+				EF841D4A1CB6F8DF004A798B /* UserViewController.swift */,
+				EF841D681CB6F93C004A798B /* ResultViewController.swift */,
+				EF841D4C1CB6F8DF004A798B /* Main.storyboard */,
+				EF841D4F1CB6F8DF004A798B /* Assets.xcassets */,
+				EF841D511CB6F8DF004A798B /* LaunchScreen.storyboard */,
+				EF841D541CB6F8DF004A798B /* Info.plist */,
+			);
+			path = Roshambo;
+			sourceTree = "<group>";
+		};
+		EF841D5C1CB6F8DF004A798B /* RoshamboTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF841D5D1CB6F8DF004A798B /* RoshamboTests.swift */,
+				EF841D5F1CB6F8DF004A798B /* Info.plist */,
+			);
+			path = RoshamboTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF841D441CB6F8DF004A798B /* Roshambo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF841D621CB6F8DF004A798B /* Build configuration list for PBXNativeTarget "Roshambo" */;
+			buildPhases = (
+				EF841D411CB6F8DF004A798B /* Sources */,
+				EF841D421CB6F8DF004A798B /* Frameworks */,
+				EF841D431CB6F8DF004A798B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Roshambo;
+			productName = Roshambo;
+			productReference = EF841D451CB6F8DF004A798B /* Roshambo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF841D581CB6F8DF004A798B /* RoshamboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF841D651CB6F8DF004A798B /* Build configuration list for PBXNativeTarget "RoshamboTests" */;
+			buildPhases = (
+				EF841D551CB6F8DF004A798B /* Sources */,
+				EF841D561CB6F8DF004A798B /* Frameworks */,
+				EF841D571CB6F8DF004A798B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF841D5B1CB6F8DF004A798B /* PBXTargetDependency */,
+			);
+			name = RoshamboTests;
+			productName = RoshamboTests;
+			productReference = EF841D591CB6F8DF004A798B /* RoshamboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF841D3D1CB6F8DF004A798B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ankit Kumar";
+				TargetAttributes = {
+					EF841D441CB6F8DF004A798B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J94UKTLVH6;
+					};
+					EF841D581CB6F8DF004A798B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J94UKTLVH6;
+						TestTargetID = EF841D441CB6F8DF004A798B;
+					};
+				};
+			};
+			buildConfigurationList = EF841D401CB6F8DF004A798B /* Build configuration list for PBXProject "Roshambo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF841D3C1CB6F8DF004A798B;
+			productRefGroup = EF841D461CB6F8DF004A798B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF841D441CB6F8DF004A798B /* Roshambo */,
+				EF841D581CB6F8DF004A798B /* RoshamboTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF841D431CB6F8DF004A798B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF841D531CB6F8DF004A798B /* LaunchScreen.storyboard in Resources */,
+				EF841D501CB6F8DF004A798B /* Assets.xcassets in Resources */,
+				EF841D4E1CB6F8DF004A798B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF841D571CB6F8DF004A798B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF841D411CB6F8DF004A798B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF841D4B1CB6F8DF004A798B /* UserViewController.swift in Sources */,
+				EF841D491CB6F8DF004A798B /* AppDelegate.swift in Sources */,
+				EF841D691CB6F93C004A798B /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF841D551CB6F8DF004A798B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF841D5E1CB6F8DF004A798B /* RoshamboTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF841D5B1CB6F8DF004A798B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF841D441CB6F8DF004A798B /* Roshambo */;
+			targetProxy = EF841D5A1CB6F8DF004A798B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF841D4C1CB6F8DF004A798B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF841D4D1CB6F8DF004A798B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF841D511CB6F8DF004A798B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF841D521CB6F8DF004A798B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF841D601CB6F8DF004A798B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF841D611CB6F8DF004A798B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF841D631CB6F8DF004A798B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Roshambo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitrkumar.Roshambo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF841D641CB6F8DF004A798B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Roshambo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitrkumar.Roshambo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF841D661CB6F8DF004A798B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoshamboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitrkumar.RoshamboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roshambo.app/Roshambo";
+			};
+			name = Debug;
+		};
+		EF841D671CB6F8DF004A798B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RoshamboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitrkumar.RoshamboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roshambo.app/Roshambo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF841D401CB6F8DF004A798B /* Build configuration list for PBXProject "Roshambo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF841D601CB6F8DF004A798B /* Debug */,
+				EF841D611CB6F8DF004A798B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF841D621CB6F8DF004A798B /* Build configuration list for PBXNativeTarget "Roshambo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF841D631CB6F8DF004A798B /* Debug */,
+				EF841D641CB6F8DF004A798B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF841D651CB6F8DF004A798B /* Build configuration list for PBXNativeTarget "RoshamboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF841D661CB6F8DF004A798B /* Debug */,
+				EF841D671CB6F8DF004A798B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF841D3D1CB6F8DF004A798B /* Project object */;
+}
